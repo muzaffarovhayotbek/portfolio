@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
-import left from '../assets/left.svg';
-import github from '../assets/github.svg';
-import { Link } from 'react-router-dom';
-import { IoMdClose } from 'react-icons/io';
-import { FaHome } from 'react-icons/fa';
-import { FcAbout } from 'react-icons/fc';
-import { GrProjects } from 'react-icons/gr';
-import { MdContacts } from 'react-icons/md';
-
+import React, { useState, useEffect, useRef } from "react";
+import left from "../assets/left.svg";
+import github from "../assets/github.svg";
+import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { GrProjects } from "react-icons/gr";
+import { MdContacts } from "react-icons/md";
 function MainLayout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -21,14 +20,14 @@ function MainLayout({ children }) {
         setIsMenuOpen(false);
       }
     };
-    if (isMenuOpen) document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    if (isMenuOpen) document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isMenuOpen]);
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Sticky header */}
       <header className="sticky top-0 z-50 pt-2 pb-2 bg-[#1B1B1B] sm:pt-1.5 sm:pb-1.5 sm:pr-2">
+        {/* <LeftBar></LeftBar> */}
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 sm:gap-2 p-1.5">
             <Link
@@ -41,23 +40,37 @@ function MainLayout({ children }) {
           </div>
 
           <div className="flex items-center gap-6 sm:gap-2">
-            {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#home" onClick={closeMenu} className="hover:text-[#39965F] text-white">
+              <a
+                href="#home"
+                onClick={closeMenu}
+                className="hover:text-[#39965F] text-white"
+              >
                 Bosh sahifa
               </a>
-              <a href="#about" onClick={closeMenu} className="hover:text-[#39965F] text-white">
+              <a
+                href="#about"
+                onClick={closeMenu}
+                className="hover:text-[#39965F] text-white"
+              >
                 Haqida
               </a>
-              <a href="#projects" onClick={closeMenu} className="hover:text-[#39965F] text-white">
-                Loyihalar
-              </a>
-              <a href="#contact" onClick={closeMenu} className="hover:text-[#39965F] text-white">
+              <a
+                href="#contact"
+                onClick={closeMenu}
+                className="hover:text-[#39965F] text-white"
+              >
                 Bog'lanish
+              </a>
+              <a
+                href="#projects"
+                onClick={closeMenu}
+                className="hover:text-[#39965F] text-white"
+              >
+                Loyihalar
               </a>
             </nav>
 
-            {/* GitHub link */}
             <a
               href="https://github.com/muzaffarovhayotbek"
               target="_blank"
@@ -67,10 +80,9 @@ function MainLayout({ children }) {
               <img src={github} alt="GitHub" width={30} />
             </a>
 
-            {/* Mobile menu toggle */}
             <button
               onClick={toggleMenu}
-              aria-label={isMenuOpen ? 'Yopish' : 'Ochish'}
+              aria-label={isMenuOpen ? "Yopish" : "Ochish"}
               className="block md:hidden p-1"
             >
               {isMenuOpen ? (
@@ -82,7 +94,6 @@ function MainLayout({ children }) {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {isMenuOpen && (
           <div
             ref={menuRef}
@@ -111,22 +122,22 @@ function MainLayout({ children }) {
               </li>
               <li>
                 <a
-                  href="#projects"
-                  onClick={closeMenu}
-                  className="flex items-center gap-2 hover:text-[#39965F] text-white"
-                >
-                  <GrProjects className="w-5 h-5" />
-                  Loyihalar
-                </a>
-              </li>
-              <li>
-                <a
                   href="#contact"
                   onClick={closeMenu}
                   className="flex items-center gap-2 hover:text-[#39965F] text-white"
                 >
                   <MdContacts className="w-5 h-5" />
                   Bog'lanish
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  onClick={closeMenu}
+                  className="flex items-center gap-2 hover:text-[#39965F] text-white"
+                >
+                  <GrProjects className="w-5 h-5" />
+                  Loyihalar
                 </a>
               </li>
             </ul>

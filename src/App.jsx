@@ -19,8 +19,8 @@ function App() {
           <Contact />
         </section>
         <section id="projects" className="scroll-mt-20">
-          <Project />
-        </section>
+  <Project />
+</section>
       </MainLayouts>
     </div>
   );

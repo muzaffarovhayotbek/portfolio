@@ -84,7 +84,7 @@ function Projects() {
             mumkin!
           </p>
           <a
-            href="https://t.me/muzaffarvch_mr"
+            href="https://t.me/HayotbekDev"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#39965F] text-white px-6 py-2 rounded-lg hover:bg-green-700 transition"
