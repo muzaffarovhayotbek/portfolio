@@ -1,15 +1,15 @@
-import React from 'react';
-import unsplash from '../../assets/unsplash.png';
-import telegram from '../../assets/telegramMe.svg';
-import megaphone from '../../assets/megaphone.png';
-import github from '../../assets/github.svg';
-import website from '../../assets/website.svg';
+import React from "react";
+import unsplash from "../../assets/unsplash.png";
+import telegram from "../../assets/telegramMe.svg";
+import megaphone from "../../assets/megaphone.png";
+import github from "../../assets/github.svg";
+import website from "../../assets/website.svg";
 
 const projects = [
   {
-    title: 'my unplash',
-    description: 'Bepul yuqori sifatli suratlar kutubxonasi.',
-    vercel: 'https://yakuniy-imtihon-six.vercel.app/',
+    title: "my unplash",
+    description: "Bepul yuqori sifatli suratlar kutubxonasi.",
+    vercel: "https://yakuniy-imtihon-six.vercel.app/",
     image: unsplash,
   },
 ];
@@ -61,11 +61,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    className="w-5 h-5"
-                    src={website}
-                    alt="website icon"
-                  />
+                  <img className="w-5 h-5" src={website} alt="website icon" />
                   <h2 className="text-blue-400 hover:text-blue-700">Website</h2>
                 </a>
               </div>

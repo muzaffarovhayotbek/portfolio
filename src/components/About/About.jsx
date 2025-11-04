@@ -19,7 +19,7 @@ function About() {
 
         <div className="flex flex-col gap-4">
           <p className="text-lg text-[#FFFFFFB2] leading-relaxed duration-300 hover:text-blue-400">
-            Men Muzaffarov Hayotbek veb dasturchisiman. Yoshim 16 da, Farg'ona
+            Men Muzaffarov Hayotbek veb dasturchisiman. Yoshim 17 da, Farg'ona
             viloyati Farg'ona shahrida tug'ilganman. Qiziqarli, ko’p
             funksionallika ega bo’lgan va kuchli dizaynga ega bo’lgan dasturlar
             yaratishga qiziqaman.
