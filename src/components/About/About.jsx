@@ -1,12 +1,12 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import html from '../../assets/html.svg';
-import css from '../../assets/css.svg';
-import js from '../../assets/js.svg';
-import react from '../../assets/react.svg';
-import tailwend from '../../assets/tailwind.svg';
-import { FaSass } from 'react-icons/fa';
-import figma from '../../assets/figma.png';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import html from "../../assets/html.svg";
+import css from "../../assets/css.svg";
+import js from "../../assets/js.svg";
+import react from "../../assets/react.svg";
+import tailwend from "../../assets/tailwind.svg";
+import { FaSass } from "react-icons/fa";
+import figma from "../../assets/figma.png";
 
 function About() {
   return (
@@ -30,8 +30,8 @@ function About() {
             taminlashdir va saytni moslashuvchan kodlar bilan yaratishdir!
             Mening maqsadim veb sayt foydalanuvchilariga barcha qismlarini
             intuitiv va qulay bo'lishga harakat qilishga qaratilgan. Agar sizga
-            men yaratgan loyihalarim qiziq bo’lsa{' '}
-            <span className="text-[#39965F] font-semibold">Loyihalar</span>{' '}
+            men yaratgan loyihalarim qiziq bo’lsa{" "}
+            <span className="text-[#39965F] font-semibold">Loyihalar</span>{" "}
             sahifasiga tashrif buyurishingiz mumkin :)
           </p>
         </div>
