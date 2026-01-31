@@ -31,7 +31,9 @@ function About() {
             Mening maqsadim veb sayt foydalanuvchilariga barcha qismlarini
             intuitiv va qulay bo'lishga harakat qilishga qaratilgan. Agar sizga
             men yaratgan loyihalarim qiziq bo’lsa{" "}
-            <span className="text-[#39965F] font-semibold">Loyihalar</span>{" "}
+            <a href="#projects" className="text-[#39965F] font-semibold">
+              Loyihalar
+            </a>
             sahifasiga tashrif buyurishingiz mumkin :)
           </p>
         </div>
