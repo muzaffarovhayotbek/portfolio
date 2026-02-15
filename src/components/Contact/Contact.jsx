@@ -1,8 +1,9 @@
-import React from 'react';
-import gmail from '../../assets/gmail.svg';
-import telegram from '../../assets/telegram.svg';
-import github from '../../assets/github.svg';
-import { GrInstagram } from 'react-icons/gr';
+import React from "react";
+import gmail from "../../assets/gmail.svg";
+import telegram from "../../assets/telegram.svg";
+import github from "../../assets/github.svg";
+import instagram from "../../assets/instagram.png";
+import { GrInstagram } from "react-icons/gr";
 function Contact() {
   return (
     <div className="flex flex-col items-center container mx-auto">
@@ -38,28 +39,28 @@ function Contact() {
             alt="gmil"
             className="w-[64px]  object-contain rounded-[6px]"
           />
-          <a href="mailto:hmuzfrov@gmail.com">
+          <a href="mailto:hayotbek0511@gmail.com">
             <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
               E-pochta
             </h4>
           </a>
 
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
-            hmuzfrov@gmail.com
+            hayotbek0511@gmail.com
           </p>
         </div>
 
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img src={telegram} alt="" width={64} />
           <a
-            href="https://t.me/muzaffarvchch"
+            href="https://t.me/hmuzaffarvch_o8"
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className="text-[20px] text-[#FFFFFF] pt-[8px] ">Telegram</h2>
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px] ">
-            https://t.me/muzaffarvchch
+            https://t.me/hmuzaffarvch_o8
           </p>
         </div>
 
@@ -78,6 +79,26 @@ function Contact() {
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
             muzaffarovhayotbek
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center text-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
+          <img
+            src={instagram}
+            alt="gmil"
+            className="w-[64px]  object-contain rounded-[6px] "
+          />
+          <a
+            href="https://www.instagram.com/muzaffarvch_o8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
+              Instagram
+            </h4>
+          </a>
+          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
+            hmuzaffarvch_o8
           </p>
         </div>
       </div>
