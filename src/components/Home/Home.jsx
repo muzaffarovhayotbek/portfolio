@@ -9,7 +9,7 @@ function Home() {
           <h2 className="text-3xl sm:text-2xl md:text-4xl font-bold text-white">
             Assalomu alaykum, Men{" "}
             <span className="text-[#39965F] mt-2 block">
-              Muzaffarov Hayotbekman
+              Muzaffarov
             </span>
           </h2>
 
